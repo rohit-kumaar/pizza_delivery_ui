@@ -30,10 +30,9 @@
     <!-- Favicon End  -->
 
     <title>Pizza | Login</title>
-    <!-- Input CSS after development remove the below link -->
-    <link rel="stylesheet" href="src/css/style.css" />
+
     <!-- Output CSS -->
-    <!-- <link rel="stylesheet" href="dist/css/style.css" /> -->
+    <link rel="stylesheet" href="dist/css/style.css" />
     <!-- Customs JS  -->
     <script src="src/js/index.js" defer></script>
   </head>
@@ -55,19 +54,41 @@
 
           <div>
             <a
-              href=""
+              href="#"
               class="btn bg-white text-black border border-slate-800 inline-block mr-0.5"
               >Sign up
-            </a>
-            <a
-              href=""
-              class="btn bg-white text-black border border-slate-800 inline-block ml-0.5"
-              >Login
             </a>
           </div>
         </div>
       </div>
     </header>
+
+    <form class="container mx-auto px-8">
+      <h1 class="text-4xl font-medium mb-4">Login</h1>
+      <div>
+        <input
+          id="email-address"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          class="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+          placeholder="Email address"
+        />
+      </div>
+      <div class="mt-4 mb-7">
+        <input
+          id="password"
+          name="password"
+          type="password"
+          autocomplete="current-password"
+          required
+          class="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+          placeholder="Password"
+        />
+      </div>
+      <a href="#" class="btn inline-block">Login</a>
+    </form>
   </body>
 </html>
 
