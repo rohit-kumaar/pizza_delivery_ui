@@ -78,7 +78,7 @@
                 </div>
               </div>
               <div class="mt-5 md:mt-0 md:col-span-2">
-                <form action="#" method="POST">
+                <form method="POST" enctype="multipart/form-data">
                   <div class="shadow overflow-hidden sm:rounded-md">
                     <div class="px-4 py-5 bg-white sm:p-6">
                       <div class="grid grid-cols-6 gap-6">
@@ -86,7 +86,10 @@
                           <label
                             for="first-name"
                             class="block text-sm font-medium text-gray-700"
-                            >First name</label
+                            >First name
+                            <span class="text-red-700 font-bold text-lg"
+                              >*</span
+                            ></label
                           >
                           <input
                             type="text"
@@ -101,7 +104,10 @@
                           <label
                             for="last-name"
                             class="block text-sm font-medium text-gray-700"
-                            >Last name</label
+                            >Last name<span
+                              class="text-red-700 font-bold text-lg"
+                              >*</span
+                            ></label
                           >
                           <input
                             type="text"
@@ -116,7 +122,10 @@
                           <label
                             for="email-address"
                             class="block text-sm font-medium text-gray-700"
-                            >Email address</label
+                            >Email address<span
+                              class="text-red-700 font-bold text-lg"
+                              >*</span
+                            ></label
                           >
                           <input
                             type="text"
@@ -131,7 +140,10 @@
                           <label
                             for="password"
                             class="block text-sm font-medium text-gray-700"
-                            >Password</label
+                            >Password<span
+                              class="text-red-700 font-bold text-lg"
+                              >*</span
+                            ></label
                           >
                           <input
                             type="password"
@@ -163,7 +175,10 @@
                           <label
                             for="street-address"
                             class="block text-sm font-medium text-gray-700"
-                            >Street address</label
+                            >Street address<span
+                              class="text-red-700 font-bold text-lg"
+                              >*</span
+                            ></label
                           >
                           <input
                             type="text"
@@ -178,7 +193,9 @@
                           <label
                             for="city"
                             class="block text-sm font-medium text-gray-700"
-                            >City</label
+                            >City<span class="text-red-700 font-bold text-lg"
+                              >*</span
+                            ></label
                           >
                           <input
                             type="text"
@@ -193,7 +210,10 @@
                           <label
                             for="region"
                             class="block text-sm font-medium text-gray-700"
-                            >State / Province</label
+                            >State / Province<span
+                              class="text-red-700 font-bold text-lg"
+                              >*</span
+                            ></label
                           >
                           <input
                             type="text"
@@ -208,7 +228,10 @@
                           <label
                             for="postal-code"
                             class="block text-sm font-medium text-gray-700"
-                            >ZIP / Postal code</label
+                            >ZIP / Postal code<span
+                              class="text-red-700 font-bold text-lg"
+                              >*</span
+                            ></label
                           >
                           <input
                             type="text"
@@ -221,7 +244,13 @@
                       </div>
                     </div>
                     <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                      <button type="submit" class="btn">Save</button>
+                      <button
+                        type="submit"
+                        name="submit-personal-info"
+                        class="btn"
+                      >
+                        Save
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -250,7 +279,7 @@
               </div>
 
               <div class="mt-5 md:mt-0 md:col-span-2">
-                <form action="#" method="POST">
+                <form method="POST" enctype="multipart/form-data">
                   <div class="shadow sm:rounded-md sm:overflow-hidden">
                     <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
                       <div>
