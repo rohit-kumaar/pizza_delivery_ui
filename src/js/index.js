@@ -14,3 +14,16 @@ function qsAll(selector, parent = document) {
 function qs(selector, parent = document) {
   return parent.querySelector(selector);
 }
+
+const hamburger = qs(".hamburger");
+const hamburgerMenu = qs(".hamburger-menu");
+hamburger.addEventListener("click", () => {
+  const active = hamburgerMenu.classList.toggle("active");
+  if (active) {
+    hamburger.classList.add("bx-menu");
+    hamburger.classList.remove("bx-x-circle");
+  } else {
+    hamburger.classList.remove("bx-menu");
+    hamburger.classList.add("bx-x-circle");
+  }
+});
