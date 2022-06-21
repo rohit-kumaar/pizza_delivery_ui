@@ -29,7 +29,7 @@
     <link rel="manifest" href="src/icons/site.webmanifest" />
     <!-- Favicon End  -->
 
-    <title>Checkout | Pizza Delivery</title>
+    <title>Order has been paid | Pizza Delivery</title>
 
     <!-- Output CSS -->
     <link rel="stylesheet" href="dist/css/style.css" />
@@ -81,7 +81,7 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="index.html"
                   class="btn bg-white text-black border border-slate-800 inline-block mr-0.5"
                   >Logout
                 </a>
@@ -98,24 +98,19 @@
 
     <main class="-z-10 mt-32">
       <div class="container mx-auto px-8">
-        <h1 class="text-4xl font-medium mb-4">Checkout</h1>
+        <h1 class="text-4xl font-medium mb-4">
+          Order has been paid successfully!
+        </h1>
 
-        <div class="grid gap-2">
-          <h2 class="text-2xl">Credit Card</h2>
-          <input
-            id="text"
-            name="text"
-            type="text"
-            autocomplete="text"
-            required
-            class="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-            placeholder="Enter Quantity"
-          />
-          <span class="font-medium mb-5 flex items-center gap-2"
-            >Order Total: <span class="text-xl font-bold">$18.3</span></span
-          >
+        <div class="grid gap-6">
+          <div class="p-5 bg-green-200 rounded text-green-900 font-medium">
+            You will receive notification by email with order details.
+          </div>
+
           <div>
-            <a href="javascript:void(0)" class="btn justify-end">Checkout</a>
+            <a href="menu-list.html" class="btn justify-end"
+              >Go an order some more</a
+            >
           </div>
         </div>
       </div>
