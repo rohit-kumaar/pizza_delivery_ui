@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   initApp();
 });
 
-const initApp = () => {};
+const initApp = () => {
+  form();
+};
 
 // querySelectorAll function
 function qsAll(selector, parent = document) {
@@ -27,3 +29,10 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.add("bx-x-circle");
   }
 });
+
+function form() {
+  const form = qs("form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+  });
+}

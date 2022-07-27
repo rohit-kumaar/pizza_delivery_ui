@@ -31,8 +31,8 @@
 
     <title>Checkout | Pizza Delivery</title>
 
-    <!-- Output CSS -->
-    <link rel="stylesheet" href="dist/css/style.css" />
+  <!-- Output CSS -->
+  <link rel="stylesheet" href="./src/dist/style.css" />
     <!-- Customs JS  -->
 
     <!-- Box icon start -->
@@ -51,19 +51,19 @@
         <div
           class="bg-slate-100 flex items-center justify-between h-[15vh] px-4"
         >
-          <div>
-            <img
-              class="w-16"
-              loading="lazy"
-              src="src/images/logo.PNG"
-              alt="pizza delivery logo"
-              title="Our Brand"
-            />
-          </div>
+        <a href="index.html">
+          <img
+            class="w-16 cursor-pointer"
+            loading="lazy"
+            src="src/images/logo.PNG"
+            alt="pizza delivery logo"
+            title="Our Brand"
+          />
+        </a>
 
           <nav>
             <ul
-              class="hamburger-menu active sm:translate-x-0 bg-slate-200/40 backdrop-blur-xl sm:bg-transparent fixed top-0 right-0 bottom-0 left-20 sm:static sm:left-0 p-12 sm:p-0 flex flex-col sm:flex-row sm:items-center sm:justify-center gap-6 z-10 transition-transform duration-700 sm:transition-none"
+              class="hamburger-menu active sm:translate-x-0 bg-slate-200/40 backdrop-blur-xl sm:bg-transparent fixed inset-0 sm:static sm:left-0 p-12 sm:p-0 flex flex-col sm:flex-row sm:items-center sm:justify-center gap-6 z-10 transition-transform duration-700 sm:transition-none"
             >
               <li>
                 <a href="#" class="text-slate-500 font-medium">Menu</a>
@@ -88,7 +88,7 @@
               </li>
             </ul>
 
-            <div class="sm:hidden">
+            <div class="sm:hidden cursor-pointer">
               <i class="hamburger bx bx-menu text-4xl relative z-20"></i>
             </div>
           </nav>
@@ -108,7 +108,7 @@
             type="text"
             autocomplete="text"
             required
-            class="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+            class="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm -z-10"
             placeholder="Enter Quantity"
           />
           <span class="font-medium mb-5 flex items-center gap-2"
